@@ -16,7 +16,7 @@ describe('testando o componente <Pokemon.js />', () => {
     const pokemonUrl = 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png';
 
     expect(pokemonName).toBeInTheDocument();
-    expect(pokemonType).toBeInTheDocument();
+    expect(pokemonType).toHaveTextContent('Electric');
     expect(pokemonInfos).toBeInTheDocument();
     expect(pokemonImg).toBeInTheDocument();
     expect(pokemonImg.src).toBe(pokemonUrl);
